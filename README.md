@@ -4,15 +4,19 @@ This project uses Vagrant and Virtualbox.
 
 ### Connect to the vagrant machine
 
-> cd docker-angular-grunt-seed
-> vagrant up
-> vagrant ssh
+```
+cd docker-angular-grunt-seed
+vagrant up
+vagrant ssh
+```
 
 ### build and run the image
 
-> cd /vagrant
-> docker build -t myjscontainer .
-> docker run --name myangularcontainer -it -v /vagrant/src:/myangularapp/src -p 9000:9000 myjscontainer
+```
+cd /vagrant
+docker build -t myjscontainer .
+docker run --name myangularcontainer -it -v /vagrant/src:/myangularapp/src -p 9000:9000 myjscontainer
+```
 
 ### Blog post
 
